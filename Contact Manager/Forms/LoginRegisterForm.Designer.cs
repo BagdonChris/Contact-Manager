@@ -69,7 +69,7 @@ namespace Contact_Manager.Forms
             this.pnl_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_Main.Location = new System.Drawing.Point(0, 0);
             this.pnl_Main.Name = "pnl_Main";
-            this.pnl_Main.Size = new System.Drawing.Size(738, 495);
+            this.pnl_Main.Size = new System.Drawing.Size(738, 466);
             this.pnl_Main.TabIndex = 0;
             // 
             // pnl_Sub
@@ -97,7 +97,7 @@ namespace Contact_Manager.Forms
             this.pnl_Sub.Controls.Add(this.label1);
             this.pnl_Sub.Location = new System.Drawing.Point(0, 33);
             this.pnl_Sub.Name = "pnl_Sub";
-            this.pnl_Sub.Size = new System.Drawing.Size(738, 462);
+            this.pnl_Sub.Size = new System.Drawing.Size(738, 437);
             this.pnl_Sub.TabIndex = 0;
             // 
             // panel3
@@ -329,12 +329,13 @@ namespace Contact_Manager.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(738, 495);
+            this.ClientSize = new System.Drawing.Size(738, 466);
             this.Controls.Add(this.pnl_Main);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginRegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginRegisterForm";
+            this.Load += new System.EventHandler(this.LoginRegisterForm_Load);
             this.pnl_Main.ResumeLayout(false);
             this.pnl_Main.PerformLayout();
             this.pnl_Sub.ResumeLayout(false);

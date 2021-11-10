@@ -41,5 +41,10 @@ namespace Contact_Manager.Forms
         {
 
         }
+
+        private void LoginRegisterForm_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
