@@ -19,12 +19,12 @@ namespace Contact_Manager.Forms
 
         private void pb_Minimize_Click(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void pb_Close_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void btn_Login_Click(object sender, EventArgs e)
