@@ -37,7 +37,6 @@ namespace Contact_Manager.Forms
             this.tb_LoginUsername = new System.Windows.Forms.TextBox();
             this.btn_Upload = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.pb_Register = new System.Windows.Forms.PictureBox();
             this.btn_Login = new System.Windows.Forms.Button();
             this.tb_RegisterPassword = new System.Windows.Forms.TextBox();
             this.tb_RegisterUsername = new System.Windows.Forms.TextBox();
@@ -51,14 +50,21 @@ namespace Contact_Manager.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pb_Close = new System.Windows.Forms.PictureBox();
+            this.pb_Register = new System.Windows.Forms.PictureBox();
+            this.pb_Minimize = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Register)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Minimize)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Controls.Add(this.pb_Minimize);
+            this.panel1.Controls.Add(this.pb_Close);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -152,15 +158,6 @@ namespace Contact_Manager.Forms
             this.label9.Size = new System.Drawing.Size(82, 20);
             this.label9.TabIndex = 20;
             this.label9.Text = "Password:";
-            // 
-            // pb_Register
-            // 
-            this.pb_Register.BackColor = System.Drawing.Color.Silver;
-            this.pb_Register.Location = new System.Drawing.Point(472, 242);
-            this.pb_Register.Name = "pb_Register";
-            this.pb_Register.Size = new System.Drawing.Size(123, 118);
-            this.pb_Register.TabIndex = 19;
-            this.pb_Register.TabStop = false;
             // 
             // btn_Login
             // 
@@ -295,19 +292,51 @@ namespace Contact_Manager.Forms
             this.label1.TabIndex = 0;
             this.label1.Text = "Account Login";
             // 
+            // pb_Close
+            // 
+            this.pb_Close.Image = global::Contact_Manager.Properties.Resources.close;
+            this.pb_Close.Location = new System.Drawing.Point(704, 1);
+            this.pb_Close.Name = "pb_Close";
+            this.pb_Close.Size = new System.Drawing.Size(32, 32);
+            this.pb_Close.TabIndex = 26;
+            this.pb_Close.TabStop = false;
+            // 
+            // pb_Register
+            // 
+            this.pb_Register.BackColor = System.Drawing.Color.Silver;
+            this.pb_Register.Location = new System.Drawing.Point(472, 242);
+            this.pb_Register.Name = "pb_Register";
+            this.pb_Register.Size = new System.Drawing.Size(123, 118);
+            this.pb_Register.TabIndex = 19;
+            this.pb_Register.TabStop = false;
+            // 
+            // pb_Minimize
+            // 
+            this.pb_Minimize.Image = global::Contact_Manager.Properties.Resources.minimize;
+            this.pb_Minimize.Location = new System.Drawing.Point(668, 2);
+            this.pb_Minimize.Name = "pb_Minimize";
+            this.pb_Minimize.Size = new System.Drawing.Size(32, 32);
+            this.pb_Minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_Minimize.TabIndex = 26;
+            this.pb_Minimize.TabStop = false;
+            // 
             // LoginRegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(738, 495);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginRegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginRegisterForm";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Register)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Minimize)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -336,5 +365,7 @@ namespace Contact_Manager.Forms
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_Register;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pb_Close;
+        private System.Windows.Forms.PictureBox pb_Minimize;
     }
 }
