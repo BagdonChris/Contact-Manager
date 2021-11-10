@@ -29,8 +29,8 @@ namespace Contact_Manager.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnl_Main = new System.Windows.Forms.Panel();
+            this.pnl_Sub = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_Register = new System.Windows.Forms.Button();
             this.tb_LoginPassword = new System.Windows.Forms.TextBox();
@@ -53,52 +53,52 @@ namespace Contact_Manager.Forms
             this.pb_Close = new System.Windows.Forms.PictureBox();
             this.pb_Register = new System.Windows.Forms.PictureBox();
             this.pb_Minimize = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnl_Main.SuspendLayout();
+            this.pnl_Sub.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Register)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Minimize)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnl_Main
             // 
-            this.panel1.BackColor = System.Drawing.Color.DimGray;
-            this.panel1.Controls.Add(this.pb_Minimize);
-            this.panel1.Controls.Add(this.pb_Close);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(738, 495);
-            this.panel1.TabIndex = 0;
+            this.pnl_Main.BackColor = System.Drawing.Color.DimGray;
+            this.pnl_Main.Controls.Add(this.pnl_Sub);
+            this.pnl_Main.Controls.Add(this.pb_Minimize);
+            this.pnl_Main.Controls.Add(this.pb_Close);
+            this.pnl_Main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_Main.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Main.Name = "pnl_Main";
+            this.pnl_Main.Size = new System.Drawing.Size(738, 495);
+            this.pnl_Main.TabIndex = 0;
             // 
-            // panel2
+            // pnl_Sub
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.btn_Register);
-            this.panel2.Controls.Add(this.tb_LoginPassword);
-            this.panel2.Controls.Add(this.tb_LoginUsername);
-            this.panel2.Controls.Add(this.btn_Upload);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.pb_Register);
-            this.panel2.Controls.Add(this.btn_Login);
-            this.panel2.Controls.Add(this.tb_RegisterPassword);
-            this.panel2.Controls.Add(this.tb_RegisterUsername);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.tb_RegisterLastName);
-            this.panel2.Controls.Add(this.tb_RegisterFirstName);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(0, 33);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(738, 462);
-            this.panel2.TabIndex = 0;
+            this.pnl_Sub.BackColor = System.Drawing.Color.Gray;
+            this.pnl_Sub.Controls.Add(this.panel3);
+            this.pnl_Sub.Controls.Add(this.btn_Register);
+            this.pnl_Sub.Controls.Add(this.tb_LoginPassword);
+            this.pnl_Sub.Controls.Add(this.tb_LoginUsername);
+            this.pnl_Sub.Controls.Add(this.btn_Upload);
+            this.pnl_Sub.Controls.Add(this.label9);
+            this.pnl_Sub.Controls.Add(this.pb_Register);
+            this.pnl_Sub.Controls.Add(this.btn_Login);
+            this.pnl_Sub.Controls.Add(this.tb_RegisterPassword);
+            this.pnl_Sub.Controls.Add(this.tb_RegisterUsername);
+            this.pnl_Sub.Controls.Add(this.label7);
+            this.pnl_Sub.Controls.Add(this.label8);
+            this.pnl_Sub.Controls.Add(this.tb_RegisterLastName);
+            this.pnl_Sub.Controls.Add(this.tb_RegisterFirstName);
+            this.pnl_Sub.Controls.Add(this.label4);
+            this.pnl_Sub.Controls.Add(this.label5);
+            this.pnl_Sub.Controls.Add(this.label6);
+            this.pnl_Sub.Controls.Add(this.label3);
+            this.pnl_Sub.Controls.Add(this.label2);
+            this.pnl_Sub.Controls.Add(this.label1);
+            this.pnl_Sub.Location = new System.Drawing.Point(0, 33);
+            this.pnl_Sub.Name = "pnl_Sub";
+            this.pnl_Sub.Size = new System.Drawing.Size(738, 462);
+            this.pnl_Sub.TabIndex = 0;
             // 
             // panel3
             // 
@@ -118,6 +118,7 @@ namespace Contact_Manager.Forms
             this.btn_Register.TabIndex = 24;
             this.btn_Register.Text = "Register";
             this.btn_Register.UseVisualStyleBackColor = false;
+            this.btn_Register.Click += new System.EventHandler(this.btn_Register_Click);
             // 
             // tb_LoginPassword
             // 
@@ -147,6 +148,7 @@ namespace Contact_Manager.Forms
             this.btn_Upload.TabIndex = 21;
             this.btn_Upload.Text = "Hochladen";
             this.btn_Upload.UseVisualStyleBackColor = false;
+            this.btn_Upload.Click += new System.EventHandler(this.btn_Upload_Click);
             // 
             // label9
             // 
@@ -169,6 +171,7 @@ namespace Contact_Manager.Forms
             this.btn_Login.TabIndex = 18;
             this.btn_Login.Text = "Login";
             this.btn_Login.UseVisualStyleBackColor = false;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // tb_RegisterPassword
             // 
@@ -300,6 +303,7 @@ namespace Contact_Manager.Forms
             this.pb_Close.Size = new System.Drawing.Size(32, 32);
             this.pb_Close.TabIndex = 26;
             this.pb_Close.TabStop = false;
+            this.pb_Close.Click += new System.EventHandler(this.pb_Close_Click);
             // 
             // pb_Register
             // 
@@ -319,21 +323,22 @@ namespace Contact_Manager.Forms
             this.pb_Minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pb_Minimize.TabIndex = 26;
             this.pb_Minimize.TabStop = false;
+            this.pb_Minimize.Click += new System.EventHandler(this.pb_Minimize_Click);
             // 
             // LoginRegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(738, 495);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnl_Main);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginRegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginRegisterForm";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnl_Main.ResumeLayout(false);
+            this.pnl_Main.PerformLayout();
+            this.pnl_Sub.ResumeLayout(false);
+            this.pnl_Sub.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Register)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Minimize)).EndInit();
@@ -343,8 +348,8 @@ namespace Contact_Manager.Forms
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnl_Main;
+        private System.Windows.Forms.Panel pnl_Sub;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

@@ -16,5 +16,30 @@ namespace Contact_Manager.Forms
         {
             InitializeComponent();
         }
+
+        private void pb_Minimize_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb_Close_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Upload_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Register_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
