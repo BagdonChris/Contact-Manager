@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Login_Register_Form.cs">
+    <Compile Include="Forms\LoginRegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login_Register_Form.Designer.cs">
-      <DependentUpon>Login_Register_Form.cs</DependentUpon>
+    <Compile Include="Forms\LoginRegisterForm.Designer.cs">
+      <DependentUpon>LoginRegisterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

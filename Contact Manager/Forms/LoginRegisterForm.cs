@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Contact_Manager
+namespace Contact_Manager.Forms
 {
-    public partial class Login_Register_Form : Form
+    public partial class LoginRegisterForm : Form
     {
-        public Login_Register_Form()
+        public LoginRegisterForm()
         {
             InitializeComponent();
         }
